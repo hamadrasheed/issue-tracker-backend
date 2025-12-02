@@ -13,9 +13,8 @@ Application that will help you out to maintain issues being logged.
 
 - [Pre-reqs](#pre-reqs)
 - [Getting started](#getting-started)
-- [Chiro Build Backend](#Chiro-build-backend)
+- [Tracker Backend]()
 	- [Project Structure](#project-structure)
-	- [ESLint](#eslint)
 - [Dependencies](#dependencies)
 	- [`dependencies`](#dependencies-1)
 	- [`devDependencies`](#devdependencies)
