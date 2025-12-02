@@ -1,0 +1,58 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    // -------------------------------
+    // Type safety
+    // -------------------------------
+    "await-promise": true,                          // Ensure await is used only on promises
+    "no-unsafe-any": true,                          // Disallow unsafe any
+    "strict-boolean-expressions": true,            // Avoid implicit boolean coercion
+    "no-unnecessary-type-assertion": true,         // Avoid unnecessary type assertions
+    "restrict-plus-operands": true,                 // Avoid adding incompatible types
+    "no-void-expression": true,                     // Avoid void expressions except in allowed cases
+
+    // -------------------------------
+    // Code style / readability
+    // -------------------------------
+    "quotemark": [true, "single", "avoid-escape"],  // Single quotes preferred
+    "semicolon": [true, "always"],                 // Always use semicolons
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}], // Standard for multiline objects
+    "max-line-length": [true, 320],                // Industry standard ~120 chars
+    "newline-per-chained-call": true,              // Makes chained calls readable
+    "newline-before-return": true,                 // Improves readability
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case",
+      "allow-snake-case"
+    ],
+
+    // -------------------------------
+    // Classes & interfaces
+    // -------------------------------
+    "interface-name": [true, "never-prefix"],      // Do not prefix interfaces with "I"
+    "no-unnecessary-class": [true, "allow-static-only"], // Avoid unnecessary classes
+    "no-parameter-properties": false,             // Allow for dependency injection
+    "class-name": false,                            // Enforce PascalCase class names
+
+    // -------------------------------
+    // Functions & promises
+    // -------------------------------
+    "only-arrow-functions": false,                // Allow traditional functions
+    "promise-function-async": true,               // Async functions should return promises
+    "prefer-template": true,                       // Use template literals instead of +
+    
+    // -------------------------------
+    // Imports / modules
+    // -------------------------------
+    "no-implicit-dependencies": [true, "dev"],    // No unlisted dependencies
+    "no-default-export": true,                     // Prefer named exports
+    "no-default-import": false,                    // Allow default imports if needed
+    
+    // -------------------------------
+    // Docs & comments
+    // -------------------------------
+    "completed-docs": false                        // Optional: can enforce docs for public APIs
+  }
+}
